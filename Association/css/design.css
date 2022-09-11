@@ -1,0 +1,178 @@
+.tabs {
+  position: relative;   
+  min-height: 7500px; /* This part sucks */
+  clear: both;
+    margin: 35px 70px 50px 90px;
+}
+.tab {
+  float: left;
+
+}
+.tab label {
+  background: #D5F5E3 ; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  margin-left: -1px; 
+  position: relative;
+  left: 1px; 
+
+}
+.tab [type=radio] {
+  display: none;   
+
+}
+.content {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background: white;
+  background-image: 
+ background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #ccc; 
+}
+[type=radio]:checked ~ label {
+  background: #F4F6F6  ;
+
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 0px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+
+table {
+  border-collapse: collapse;
+}
+
+.button {
+        background-color: #1c87c9;
+        border: none;
+        color: #45F993;
+        padding: 20px 34px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu-bar
+{
+	background:rgb(0,100,0);
+	text-align:center;
+}
+.menu-bar ul
+{
+	display:inline-flex;
+	list-style:none;
+	color:#fff;
+}
+.menu-bar ul li
+{
+	width:120px;
+	margin:15px;
+	padding:15px;
+}
+.menu-bar ul li a
+{
+	text-decoration:none;
+	color:#fff;
+}
+.active,.menu-bar ul li:hover
+{
+	background:#2bab0d;
+	border-radius:3px;
+}
+.sub-menu-1
+{
+	display:none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+	display:block;
+	position:absolute;
+	background:rgb(0,100,0);
+	margin-top:15px;
+	margin-left:-15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+	display:block;
+	margin:10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+	width:150px;
+	padding:10px;
+	border-bottom:1px dotted #fff;
+	background:transparent;
+	border-radius:0;
+	text-align:left;
+}
+
+
+
